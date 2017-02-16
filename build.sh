@@ -33,6 +33,9 @@ sed -i -e "s/USER=td-agent/USER=root/" -e "s/GROUP=td-agent/GROUP=root/" /etc/in
 td-agent-gem install --no-document fluent-plugin-kubernetes_metadata_filter -v 0.24.0
 td-agent-gem install --no-document fluent-plugin-elasticsearch -v 1.5.0
 
+# install the fluent-plugin-loggly gem from Ruby Gems or from GitHub
+td-agent-gem install --no-document fluent-plugin-loggly -v 0.0.9
+
 # Remove docs and postgres references
 rm -rf /opt/td-agent/embedded/share/doc \
   /opt/td-agent/embedded/share/gtk-doc \
