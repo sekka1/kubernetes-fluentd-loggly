@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: fluentd-es
-        image: garland/kubernetes-fluentd-loggly:token-param
+        image: garland/kubernetes-fluentd-loggly:1.0
         command:
           - '/bin/sh'
           - '-c'
